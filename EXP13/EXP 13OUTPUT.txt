@@ -1,0 +1,131 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+PART A: FREERTOS MESSAGE QUEUE
+Message queue created successfully
+[PRODUCER] Data sent: 110
+[CONSUMER] Data received: 110
+---------------------------
+[PRODUCER] Data sent: 120
+[CONSUMER] Data received: 120
+---------------------------
+[PRODUCER] Data sent: 130
+[PRODUCER] Data sent: 140
+[CONSUMER] Data received: 130
+---------------------------
+[PRODUCER] Data sent: 150
+[CONSUMER] Data received: 140
+---------------------------
+[PRODUCER] Data sent: 160
+[PRODUCER] Data sent: 170
+[CONSUMER] Data received: 150
+---------------------------
+[PRODUCER] Data sent: 180
+[CONSUMER] Data received: 160
+---------------------------
+[PRODUCER] Data sent: 190
+[PRODUCER] Data sent: 200
+[CONSUMER] Data received: 170
+---------------------------
+[PRODUCER] Data sent: 210
+[CONSUMER] Data received: 180
+---------------------------
+[PRODUCER] Data sent: 220
+[PRODUCER] Data sent: 230
+[CONSUMER] Data received: 190
+---------------------------
+
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+PART A: FREERTOS MESSAGE QUEUE
+Message queue created successfully
+[PRODUCER] Data sent: 110
+[CONSUMER] Data received: 110
+---------------------------
+[PRODUCER] Data sent: 120
+[CONSUMER] Data received: 120
+---------------------------
+[PRODUCER] Data sent: 130
+[PRODUCER] Data sent: 140
+[CONSUMER] Data received: 130
+---------------------------
+[PRODUCER] Data sent: 150
+[CONSUMER] Data received: 140
+---------------------------
+[PRODUCER] Data sent: 160
+[PRODUCER] Data sent: 170
+[CONSUMER] Data received: 150
+---------------------------
+[PRODUCER] Data sent: 180
+[CONSUMER] Data received: 160
+---------------------------
+[PRODUCER] Data sent: 190
+[PRODUCER] Data sent: 200
+[CONSUMER] Data received: 170
+---------------------------
+[PRODUCER] Data sent: 210
+[CONSUMER] Data received: 180
+---------------------------
+[PRODUCER] Data sent: 220
+[PRODUCER] Data sent: 230
+[CONSUMER] Data received: 190
+---------------------------
+[PRODUCER] Data sent: 240
+[CONSUMER] Data received: 200
+---------------------------
+[PRODUCER] Data sent: 250
+[PRODUCER] Data sent: 260
+[CONSUMER] Data received: 210
+---------------------------
+[PRODUCER] Queue full; data not sent
+[CONSUMER] Data received: 220
+---------------------------
+[PRODUCER] Data sent: 280
+[CONSUMER] Data received: 230
+---------------------------
+[PRODUCER] Data sent: 290
+[PRODUCER] Queue full; data not sent
+[CONSUMER] Data received: 240
+---------------------------
+[PRODUCER] Data sent: 310
+[CONSUMER] Data received: 250
+---------------------------
+[PRODUCER] Data sent: 320
+[PRODUCER] Queue full; data not sent
+[CONSUMER] Data received: 260
+---------------------------
+[PRODUCER] Data sent: 340
+[CONSUMER] Data received: 280
+---------------------------
+[PRODUCER] Data sent: 350
+[PRODUCER] Queue full; data 
+[CONSUMER] Data received: 290
+---------------------------
+[PRODUCER] Data sent: 370
+[CONSUMER] Data received: 310
+---------------------------
+[PRODUCER] Data sent: 380
+[PRODUCER] Queue full; data not sent
+[CONSUMER] Data received: 320
+---------------------------
+[PRODUCER] Data sent: 400
+[CONSUMER] Data received: 340
+---------------------------
+[PRODUCER] Data sent: 410
+[PRODUCER] Data sent: 420
+[CONSUMER] Data received: 3
