@@ -1,0 +1,44 @@
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+==============================
+RTOS MEMORY MANAGEMENT TEST
+==============================
+
+--- PART A: HEAP ALLOCATION ---
+Requested: 40 bytes
+Heap before: 326592 bytes
+Heap after: 326536 bytes
+Heap reduction: 56 bytes
+Heap after release: 326592 bytes
+
+--- PART B: MEMORY LEAK ---
+After allocation 1: free heap 325436 bytes (lost 1156)
+After allocation 2: free heap 324280 bytes (lost 2312)
+After allocation 3: free heap 323188 bytes (lost 3404)
+After allocation 4: free heap 322096 bytes (lost 4496)
+After allocation 5: free heap 321004 bytes (lost 5588)
+After freeing all: 326592 bytes
+Lowest free heap ever: 299412 bytes
+
+--- PART C: STACK HIGH-WATER MARK ---
+Before stackHungry(): 2372 bytes never used
+stackHungry(): buffer[1499] = 219
+After stackHungry(): 836 bytes never used
+Approximate peak stack used: 3260 bytes
+
+--- PART D: MEMORY POOL ---
+Block 1 allocated at 0x3ffc1d3c
+Block 2 allocated at 0x3ffc1d5c
+Block 3 allocated at 0x3ffc1d7c
+Block 4 allocated at 0x3ffc1d9c
+Block 5: FAILED - pool FULL
+Block 2 released
+New request got 0x3ffc1d5c (same block reused)
+All blocks released
