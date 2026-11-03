@@ -1,0 +1,35 @@
+00:12.288
+98%
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+==============================================
+PRIORITY INVERSION TEST (USE_MUTEX = 1)
+LOW = P1, MEDIUM = P2, HIGH = P3, core 1
+==============================================
+[ 100 ms] LOW -> resource LOCKED (priority 1)
+[ 200 ms] LOW -> working 1/10, current priority 1
+[ 300 ms] LOW -> working 2/10, current priority 1
+[ 300 ms] HIGH -> requests the resource
+[ 400 ms] LOW -> working 3/10, current priority 3
+[ 500 ms] LOW -> working 4/10, current priority 3
+[ 600 ms] LOW -> working 5/10, current priority 3
+[ 700 ms] LOW -> working 6/10, current priority 3
+[ 800 ms] LOW -> working 7/10, current priority 3
+[ 900 ms] LOW -> working 8/10, current priority 3
+[1000 ms] LOW -> working 9/10, current priority 3
+[1100 ms] LOW -> working 10/10, current priority 3
+[1100 ms] HIGH -> resource LOCKED after waiting 800 ms
+==============================================
+RESULT: HIGH waited 800 ms (mutex, priority inheritance)
+==============================================
+[1100 ms] MEDIUM -> starts 2000 ms of CPU work
+[1623 ms] MEDIUM -> working 1/4
