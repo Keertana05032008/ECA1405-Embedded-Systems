@@ -1,0 +1,101 @@
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+BINARY SEMAPHORE EXPERIMENT
+[BINARY] Producer event 1
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 2
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 3
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 4
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 5
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 6
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+
+MUTEX SHARED DATA PROTECTION EXPERIMENT
+[MUTEX] Task 1 counter = 1
+[MUTEX] Task 2 counter = 2
+[MUTEX] Task 1 counter = 3
+[MUTEX] Task 2 counter = 4
+[MUTEX] Task 1 counter = 5
+[MUTEX] Task 2 counter = 6
+[MUTEX] Task 1 counter = 7
+[MUTEX] Task 1 counter = 8
+[MUTEX] Task 2 counter = 9
+[MUTEX] Task 1 counter = 10
+[MUTEX] Task 2 counter = 11
+[MUTEX] Task 1 counter = 12
+[MUTEX] Task 2 counter = 13
+[MUTEX] Task 1 counter = 14
+[MUTEX] Task 1 counter = 15
+[MUTEX] Task 2 counter = 16
+[MUTEX] Task 1 counter = 17
+[MUTEX] Task 2 counter = 18
+[MUTEX] Task 2 counter = 19
+[MUTEX] Task 2 counter = 20
+FINAL sharedCounter = 20 (expected 20)
+[BINARY] Producer event 7
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 8
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 9
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 10
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 11
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 12
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 13
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 14
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 15
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 16
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 17
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 18
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 19
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 20
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 21
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 22
+[BINARY] Signal sent
+[BINARY] Consumer received signal
+[BINARY] Producer event 23
+[BINARY] Signal sent
+[BINARY] Consumer received si
